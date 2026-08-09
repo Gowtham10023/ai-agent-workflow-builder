@@ -36,6 +36,12 @@ A simplified prototype of an AI-agent workflow builder using Hasura, PostgreSQL,
 - Approval gates pause runs and only owner/editor roles in the same org can approve them.
 - The UI supports building a new workflow by adding steps and triggers and saving them through Hasura.
 
+## Local runtime verification
+
+- `npm run build` passes successfully.
+- The Next.js app starts locally and responds at `http://127.0.0.1:3001` when run with `npm run dev`.
+- Docker is not available in this environment, so PostgreSQL and Hasura containers could not be started here; the project includes the full schema, metadata, and setup instructions for local containerized execution.
+
 ## Project layout
 
 - `hasura/migrations/` contains the Postgres schema and seed migrations.
